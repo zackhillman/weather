@@ -4,6 +4,9 @@ from email.mime.text import MIMEText
 import time
 
 def sendEmail(location, weather, toEmail):
+    """
+    Sends an email to given toEmail. Body of email includes given location and weather.
+    """
     port = 465
     smtp_server = "smtp.gmail.com"
     sender_email = "zackweather2@gmail.com"

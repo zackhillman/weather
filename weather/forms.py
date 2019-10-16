@@ -8,5 +8,5 @@ class SubscribeForm(forms.ModelForm):
         model = User
         fields = ['email', 'location']
         widgets = {
-            'location': autocomplete.ModelSelect2(url='select2_fk')
+            'location': autocomplete.ModelSelect2(url='select2_fk') #for autocomplete view
         }

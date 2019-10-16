@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('thanks/', views.thanks, name='thanks'),
+    #url that is used for auto complete
     url(
         'test-autocomplete/$',
         autocomplete.Select2QuerySetView.as_view(model=Location),
