@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from weather.models import User
 from weather.weather import WeatherData
-from weather.send_email import sendEmail
+from weather.email_service import sendEmail
 
 class Command(BaseCommand):
     help = 'Sends email to users'
